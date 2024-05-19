@@ -1,0 +1,11 @@
+Model Information:
+* title:	Plussy vending machine
+* source:	https://sketchfab.com/3d-models/plussy-vending-machine-89853a54227a45da8f4cc067772753cd
+* author:	Rusty-exe (https://sketchfab.com/dustyrusty)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Plussy vending machine" (https://sketchfab.com/3d-models/plussy-vending-machine-89853a54227a45da8f4cc067772753cd) by Rusty-exe (https://sketchfab.com/dustyrusty) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

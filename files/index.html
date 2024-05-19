@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <!-- CARS -->
+      <a-asset-item id="toyota_supra" src="../assets/cars/toyota_supra_mk4/scene.gltf"></a-asset-item>
+      <a-asset-item id="nissan_silvia" src="../assets/cars/nissan_silvia_180sx_free/scene.gltf"></a-asset-item>
+      <a-asset-item id="mazda_miata" src="../assets/cars/mazda_miata_mx-5/scene.gltf"></a-asset-item>
+      <a-asset-item id="porsche_930" src="../assets/cars/porsche_930_rwb_mekkatrance_35/scene.gltf"></a-asset-item>
+      <a-asset-item id="nissan_skyline_r35" src="../assets/cars/nissan_skyline_gtr_r35/scene.gltf"></a-asset-item>
+      <a-asset-item id="nissan_skyline_r34" src="../assets/cars/nissan_skyline_r34_gtr/scene.gltf"></a-asset-item>
+      <a-asset-item id="mitsubishi_eclipse" src="../assets/cars/big_lou_eclipse_gt_nfsmw/scene.gltf"></a-asset-item>
+      <a-asset-item id="silvia_kicker" src="../assets/cars/nissan_silvia_s15_kicker/scene.gltf"></a-asset-item>
+      <!-- FLOOR / CEILING / WALLS -->
+      <a-asset-item id="floor_texture"
+        src="../assets/walls-floor-ceiling/checkered_tile_floor/scene.gltf"></a-asset-item>
+      <a-asset-item id="brick_wall" src="../assets/walls-floor-ceiling/low-poly_brick_wall/scene.gltf"></a-asset-item>
+      <a-asset-item id="ceiling_texture"
+        src="../assets/walls-floor-ceiling/seamless__floor_tiled_texture_v/scene.gltf"></a-asset-item>
+      <a-asset-item id="garage_door"
+        src="../assets/walls-floor-ceiling/underground_garage_door/scene.gltf"></a-asset-item>
+      <!-- WALL DECO -->
+      <a-asset-item id="neon_poster" src="../assets/walls-deco/neon__posters/scene.gltf"></a-asset-item>
+      <a-asset-item id="japanese_sign"
+        src="../assets/walls-deco/cyberpunk_diner_sign_japanese/scene.gltf"></a-asset-item>
+      <a-asset-item id="neon_pacman" src="../assets/walls-deco/neon_pac-man/scene.gltf"></a-asset-item>
+      <a-asset-item id="neon_open" src="../assets/walls-deco/neon_open_sign/scene.gltf"></a-asset-item>
+      <a-asset-item id="neon_palm" src="../assets/walls-deco/neon_palm_tree_sign/scene.gltf"></a-asset-item>
+      <a-asset-item id="dollar_sign" src="../assets/walls-deco/a_pixel_dollar/scene.gltf"></a-asset-item>
+      <a-asset-item id="neon_key" src="../assets/walls-deco/neon_sign_board_key/scene.gltf"></a-asset-item>
+      <a-asset-item id="neon_casette" src="../assets/walls-deco/cassete_neon/scene.gltf"></a-asset-item>
+      <a-asset-item id="neon_light" src="../assets/walls-deco/long_office_ceiling_light/scene.gltf"></a-asset-item>
+      <a-asset-item id="graffiti_1" src="../assets/walls-deco/cco_decal_-_graffiti_textures/scene.gltf"></a-asset-item>
+      <a-asset-item id="wall_light" src="../assets/walls-deco/wall_light/scene.gltf"></a-asset-item>
+      <!-- ROOM DECO -->
+      <a-asset-item id="podium" src="../assets/room-deco/podium_large/scene.gltf"></a-asset-item>
+      <a-asset-item id="sign" src="../assets/room-deco/biohazard_warning_sign/scene.gltf"></a-asset-item>
+      <a-asset-item id="vending_1" src="../assets/room-deco/vending_machine_with_feet/scene.gltf"></a-asset-item>
+      <a-asset-item id="vending_2" src="../assets/room-deco/japan_vending_machine_soft_drink/scene.gltf"></a-asset-item>
+      <a-asset-item id="vending_3" src="../assets/room-deco/plussy_vending_machine/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <!-- LIGHTS -->
+    <a-entity light="type: directional; intensity: 0.5; color: #7a51dd" position="5 8 -2"></a-entity>
+    <a-entity light="type: directional; intensity: 0.4; color: #6aa9d6" position="-5 8 -2"></a-entity>
+    <a-entity light="type: directional; intensity: 0.3; color: #a073d6" position="0 8 4"></a-entity>
+    <a-entity light="type: ambient; intensity: 0.2; color: #5a3977"></a-entity>
+    <a-entity light="type: point; intensity: 0.4; color: #c251dd" position="-5 1 0"></a-entity>
+
+    <!-- FLOOR -->
+    <a-entity gltf-model="#floor_texture" scale="0.1 0.1 0.1" position="-9.2 0 0"></a-entity>
+    <a-entity gltf-model="#floor_texture" scale="0.1 0.1 0.1" position="16.4 0 0"></a-entity>
+
+    <!-- CEILING -->
+    <a-entity gltf-model="#ceiling_texture" scale="5 5 5" position="16.4 4.9 0" rotation="180 0 0"></a-entity>
+    <a-entity gltf-model="#ceiling_texture" scale="5 5 5" position="-9.2 4.9 0" rotation="180 0 0"></a-entity>
+
+    <!-- WALLS -->
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="-18.4 0 -12.8" rotation="0 0 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="-3.8 0 -12.8" rotation="0 0 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="11 0 -12.8" rotation="0 0 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="-22 0 -2" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="-22 0 10" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="-11 0 12.8" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="3.8 0 12.8" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="18.4 0 12.8" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="22 0 -2" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#brick_wall" scale="2.6 2.6 2.6" position="22 0 10" rotation="0 90 0"></a-entity>
+
+    <!-- SIDE ONE CARS -->
+    <a-entity gltf-model="#porsche_930" scale="0.8 0.8 0.8" position="-15 0.6 -7"></a-entity>
+    <a-entity gltf-model="#nissan_silvia" scale="1.2 1.2 1.2" position="-5 0.6 -7"></a-entity>
+    <a-entity gltf-model="#mazda_miata" scale="1.2 1.2 1.2" position="5 0.5 -7"></a-entity>
+    <a-entity gltf-model="#toyota_supra" scale="1.2 1.2 1.2" position="15 0.6 -7"></a-entity>
+
+    <!-- SIDE TWO CARS -->
+    <a-entity gltf-model="#nissan_skyline_r35" scale="1.25 1.25 1.25" position="-15 0.6 7"rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#mitsubishi_eclipse" scale="1.5 1.5 1.5" position="-5 0.8 7" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#silvia_kicker" scale="2.7 2.7 2.7" position="5 1.45 7" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#nissan_skyline_r34" scale="1.3 1.3 1.3" position="15 0.5 7" rotation="0 180 0"></a-entity>
+
+    <!-- SIGNS -->
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="-15 0.3 -4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="-12.8 0.9 -3.95" rotation="0 0 0"material="color: white">
+      <a-entity>
+        <a-text value="Porsche 930" color="black" align="center" width="2" height="0.7" position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: 300+" color="black" align="center" width="2" height="0.7"position="0 0.125 0"></a-text>
+        <a-text value="Engine: 3.3L Turbo Flat-6" color="black" align="center" width="2" height="0.7"position="0 0 0"></a-text>
+        <a-text value="Production Years: 1975-1989" color="black" align="center" width="2" height="0.7"position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="-5 0.3 -4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="-2.8 0.9 -3.95" rotation="0 0 0"material="color: white">
+      <a-entity>
+        <a-text value="Nissan Silvia" color="black" align="center" width="2" height="0.7" position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: Varies" color="black" align="center" width="2" height="0.7"position="0 0.125 0"></a-text>
+        <a-text value="Engine: Inline-4 / Inline-6" color="black" align="center" width="2" height="0.7"position="0 0 0 0"></a-text>
+        <a-text value="Production Years: 1964-2002" color="black" align="center" width="2" height="0.7"position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="0.6 0.3 -4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="2.8 0.9 -3.95" rotation="0 0 0"material="color: white">
+      <a-entity>
+        <a-text value="Mazda Miata MX5" color="black" align="center" width="2" height="0.7"position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: Varies" color="black" align="center" width="2" height="0.7"position="0 0.125 0"></a-text>
+        <a-text value="Engine: Inline-4" color="black" align="center" width="2" height="0.7" position="0 0 0"></a-text>
+        <a-text value="Production Years: 1989-present" color="black" align="center" width="2" height="0.7"position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="10.6 0.3 -4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="12.8 0.9 -3.95" rotation="0 0 0"material="color: white">
+      <a-entity>
+        <a-text value="Toyota Supra MK4" color="black" align="center" width="2" height="0.7"position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: 220-326" color="black" align="center" width="2" height="0.7"position="0 0.125 0"></a-text>
+        <a-text value="Engine: Inline-6" color="black" align="center" width="2" height="0.7" position="0 0 0"></a-text>
+        <a-text value="Production Years: 1993-2002" color="black" align="center" width="2" height="0.7"position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="-15 0.3 4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="-12.8 0.9 3.95" rotation="0 180 0"material="color: white">
+      <a-entity>
+        <a-text value="Nissan Skyline GTR R35" color="black" align="center" width="2" height="0.7"position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: 480-600" color="black" align="center" width="2" height="0.7"position="0 0.125 0"></a-text>
+        <a-text value="Engine: V6" color="black" align="center" width="2" height="0.7" position="0 0 0"></a-text>
+        <a-text value="Production Years: 2007-present" color="black" align="center" width="2" height="0.7"
+          position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="-5 0.3 4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="-2.8 0.9 3.95" rotation="0 180 0"material="color: white">
+      <a-entity>
+        <a-text value="Mitsubishi Eclipse" color="black" align="center" width="2" height="0.7"position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: Varies" color="black" align="center" width="2" height="0.7"position="0 0.125 0"></a-text>
+        <a-text value="Engine: Varies" color="black" align="center" width="2" height="0.7" position="0 0 0"></a-text>
+        <a-text value="Production Years: 1990-2012" color="black" align="center" width="2" height="0.7" position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="0.6 0.3 4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="2.8 0.9 3.95" rotation="0 180 0"
+      material="color: white">
+      <a-entity>
+        <a-text value="Nissan Silvia Kicker" color="black" align="center" width="2" height="0.7" position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: Varies" color="black" align="center" width="2" height="0.7"  position="0 0.125 0"></a-text>
+        <a-text value="Engine: Inline-4" color="black" align="center" width="2" height="0.7" position="0 0 0"></a-text>
+        <a-text value="Production Years: 1964-2002" color="black" align="center" width="2" height="0.7"position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+
+    <a-entity gltf-model="#sign" scale="0.25 0.25 0.25" position="10.6 0.3 4" rotation="0 0 0"></a-entity>
+    <a-plane id="customSign" width="1.35" height="0.7" position="12.8 0.9 3.95" rotation="0 180 0" material="color: white">
+      <a-entity>
+        <a-text value="Nissan Skyline GTR R34" color="black" align="center" width="2" height="0.7"position="0 0.25 0"></a-text>
+        <a-text value="Horsepower: 276-330" color="black" align="center" width="2" height="0.7" position="0 0.125 0"></a-text>
+        <a-text value="Engine: Inline-6" color="black" align="center" width="2" height="0.7" position="0 0 0"></a-text>
+        <a-text value="Production Years: 1999-2002" color="black" align="center" width="2" height="0.7"position="0 -0.125 0"></a-text>
+      </a-entity>
+    </a-plane>
+
+    <!-- PODIUMS -->
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="-15 0.5 -7" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="-5 0.5 -7" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="5 0.5 -7" rotation="0 -90 0"></a-entity>
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="15 0.5 -7" rotation="0 -90 0"></a-entity>
+
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="-15 0.5 7" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="-5 0.5 7" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="5 0.5 7" rotation="0 -90 0"></a-entity>
+    <a-entity gltf-model="#podium" scale="0.018 0.018 0.018" position="15 0.5 7" rotation="0 -90 0"></a-entity>
+
+    <!-- CEILING LAMPS -->
+    <a-entity gltf-model="#neon_light" scale="1 1 1" position="-9.4 4.55 -7" rotation="180 90 0"></a-entity>
+    <a-entity gltf-model="#neon_light" scale="1 1 1" position="-9.4 4.55 7" rotation="180 90 0"></a-entity>
+    <a-entity gltf-model="#neon_light" scale="1 1 1" position="0 4.55 -7" rotation="180 90 0"></a-entity>
+    <a-entity gltf-model="#neon_light" scale="1 1 1" position="0 4.55 7" rotation="180 90 0"></a-entity>
+    <a-entity gltf-model="#neon_light" scale="1 1 1" position="9.4 4.55 7" rotation="180 90 0"></a-entity>
+    <a-entity gltf-model="#neon_light" scale="1 1 1" position="9.4 4.55 -7" rotation="180 90 0"></a-entity>
+
+    <!-- WALL DECO -->
+    <a-entity gltf-model="#neon_palm" scale="0.0045 0.0045 0.0045" position="-11 0.8 -13.4"
+      rotation="-90 180 0"></a-entity>
+    <a-entity gltf-model="#neon_casette" scale="0.5 0.5 0.5" position="-18 0 -12.4" rotation="0 -180 0"></a-entity>
+    <a-entity gltf-model="#neon_poster" scale="3 3 3" position="0 0.5 -12.4" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#neon_pacman" scale="10 10 10" position="12 2.5 -12.4" rotation="0 0 0"></a-entity>
+    <a-entity gltf-model="#graffiti_1" scale="0.01 0.01 0.01" position="14.5 2.4 12.4" rotation="0 0 0"></a-entity>
+    <a-entity gltf-model="#wall_light" scale="0.1 0.1 0.1" position="21.4 2.2 -5" rotation="0 -55 0"></a-entity>
+    <a-entity gltf-model="#wall_light" scale="0.1 0.1 0.1" position="21.4 2.2 4.25" rotation="0 -55 0"></a-entity>
+    <a-entity gltf-model="#garage_door" scale="1.6 1.6 1.6" position="22 0 0" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#garage_door" scale="1.6 1.6 1.6" position="22.75 0 0" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#japanese_sign" scale="0.2 0.2 0.2" position="0 0.6 12.4" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#dollar_sign" scale="0.07 0.07 0.07" position="-6 3 12.4" rotation="0 0 0"></a-entity>
+    <a-entity gltf-model="#neon_open" scale="2 2 2" position="-10 3 12.4" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#neon_key" scale="0.1 0.1 0.1" position="10.5 -0.2 12.4" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="#vending_1" scale="0.015 0.015 0.015" position="-21 0 3.5" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#vending_2" scale="1.5 1.5 1.5" position="-21 0 -2.6" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#vending_3" scale="2 2 2" position="-21 0 -5" rotation="0 0 0"></a-entity>
+    <a-entity>
+      <a-video autoplay loop muted width="4.5" height="3.5" src="../assets/video_car.mp4" position="-21.6 2.6 0"
+        rotation="0 90 0"></a-video>
+      <a-plane geometry="primitive: plane; width: 5; height: 4" position="-21.7 2.6 0" rotation="0 90 0"
+        material="opacity: 0.8; color: black"></a-plane>
+    </a-entity>
+  </a-scene>
+</body>
+
+</html>

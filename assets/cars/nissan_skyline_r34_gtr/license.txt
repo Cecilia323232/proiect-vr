@@ -1,0 +1,11 @@
+Model Information:
+* title:	Nissan Skyline R34 GTR
+* source:	https://sketchfab.com/3d-models/nissan-skyline-r34-gtr-6835b16977154068a5adb5445cd74ce6
+* author:	Blue3D (https://sketchfab.com/Blueberry12)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Nissan Skyline R34 GTR" (https://sketchfab.com/3d-models/nissan-skyline-r34-gtr-6835b16977154068a5adb5445cd74ce6) by Blue3D (https://sketchfab.com/Blueberry12) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

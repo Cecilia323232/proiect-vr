@@ -1,0 +1,11 @@
+Model Information:
+* title:	neon sign board (key)
+* source:	https://sketchfab.com/3d-models/neon-sign-board-key-5c5c3fc9f9dd4bc9b9872dac044b29a0
+* author:	alina_dreiman (https://sketchfab.com/alina_dreiman)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "neon sign board (key)" (https://sketchfab.com/3d-models/neon-sign-board-key-5c5c3fc9f9dd4bc9b9872dac044b29a0) by alina_dreiman (https://sketchfab.com/alina_dreiman) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
